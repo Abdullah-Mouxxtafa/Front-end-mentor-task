@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    gap: 0;
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.card {
+    background-color: rgba(29, 26, 26, 0.989);
+    padding: 100px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0px;
+}
+
+.sedan {
+    background-color: #f28c28;
+    color: white;
+}
+
+.suv {
+    background-color: #006d6a;
+    color: white;
+}
+
+.luxury {
+    background-color: #005b5b;
+    color: white;
+}
+
+.car-icon {
+    width: 50px; 
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+button {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 45%; 
+    }
+}
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .card {
+        width: 90%;
+    }
+}
